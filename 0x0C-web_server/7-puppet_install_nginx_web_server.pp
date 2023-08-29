@@ -7,8 +7,6 @@ package {
 
 file {'/var/www/html/index.html':
     content => 'Hello World!',
-    owner   => '/var/www'
-    user    => '/var/www'
 }
 
 file_line {'configure redirection':

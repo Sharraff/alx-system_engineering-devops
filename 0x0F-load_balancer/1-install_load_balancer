@@ -33,7 +33,7 @@ backend hbnb
     stats enable
     stats uri /haproxy?stats
     balance roundrobin
-    server 134489-web-01 54.87.238.34:80 check
-    server 134489-web-02 100.25.30.179:80 check
+    server 134489-web-01 54.144.133.188:80 check
+    server 134489-web-02 18.209.152.80:80 check
 " >> /etc/haproxy/haproxy.cfg
-sudo service haproxy restart
+sudo service haiproxy restart

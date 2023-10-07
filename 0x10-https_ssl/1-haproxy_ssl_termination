@@ -35,13 +35,11 @@ defaults
 frontend http-in
     bind *:80
     mode http
-    bind *:443 ssl crt /etc/haproxy/certs/www.projectnow.tech.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.projectnow.tech/fullchain.pem
     redirect scheme https if !{ ssl_fc }
     default_backend hbnb
 
 backend hbnb
-    stats enable
-    stats uri /haproxy?stats
     balance roundrobin
     server 134489-web-01 54.144.133.188:80 check
     # server 134489-web-02 18.209.152.80:80 check

@@ -44,4 +44,4 @@ backend hbnb
     stats uri /haproxy?stats
     balance roundrobin
     server 134489-web-01 54.144.133.188:80 check
-    server 134489-web-02 18.209.152.80:80 check
+    # server 134489-web-02 18.209.152.80:80 check

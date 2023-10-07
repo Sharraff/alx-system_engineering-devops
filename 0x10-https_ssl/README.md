@@ -1,0 +1,1 @@
+# installing an ssl certificate on HAProxy
